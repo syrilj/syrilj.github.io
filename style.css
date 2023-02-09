@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
+
+body {
+  margin: 0;
+  margin-top: 1rem;
+}
+img {
+    width: 12.5rem;
+    height: 12.5rem;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    margin-left: 2.5rem;
+    box-shadow:#1c1616;
+    position: static;
+  }
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  margin-bottom: 1px;
+  letter-spacing: 0.1em;
+  font-size: 1.5rem;
+}
+
+h1,
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  letter-spacing: 0.1em;
+  font-size: 1.5rem;
+}
+
+p,
+a,
+td li {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+}
+
+li {
+  padding: 1rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+td.large {
+  font-size: 1.2rem;
+}
+
+td strong {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.075em;
+  font-weight: 500;
+  font-size: larger;
+}
+
+i {
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 10%;
+  color: #006494;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+nav {
+  position: static;
+  top: 0;
+  margin: 1;
+  width: 100%;
+  display: flex;
+  border-top: 2.5px solid #ebb128;
+  border-bottom: 1px solid #bababa;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+nav a {
+  font-family: 'Montserrat', sans-serif;
+  display: inline-block;
+  color: #212121;
+  text-align: center;
+  padding: 2% 3%;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  font-size: 1.2rem;
+}
+
+
+a:hover:not(.active) {
+  color: #c01212;
+}
+
+a.active {
+  color: #c01212;
+}
+
+
+
+
+div.content {
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 20%;
+    align-items: right;
+    width: 100vw;
+    border-left: 1px solid #bababaef;
+    margin-bottom: 0rem;
+    margin-top: 1.5rem;
+  }
+      
+  div.container{
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  div.content a{
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: rgb(48, 81, 147);
+    color: rgb(121, 108, 221);
+  }
+div.content h2{
+  
+      
+        text-align: left;
+        text-transform: uppercase;
+    font-family: 'Gambetta', serif;
+    letter-spacing: -2px;
+      font-size: 2.25rem;
+    font-variation-settings: "wght" 
+        311;
+    margin-bottom: 0.8rem;
+    color: rgb(205, 224, 226);
+    outline: none;
+  
+      }
+    div.container h2:hover {
+        font-variation-settings: "wght" 582; 
+        letter-spacing: 1px;
+}
+div.sidebar a{
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: rgb(48, 81, 147);
+    color: rgb(121, 108, 221);
+}
+
+table {
+    width: 100%;
+    font-size: 1.25rem;
+
+  }
+  
+  th, td {
+
+    padding: 10px;
+    text-align: left;
+  }
+  
+
+      
+  div.sidebar {
+    position: sticky;
+    width: 40%;
+  
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -10rem;
+  
+
+      }
+  .sidebar h1 {
+      
+      text-align: center;
+      text-transform: uppercase;
+  font-family: 'Gambetta', serif;
+  letter-spacing: -2px;
+    font-size: 2.25rem;
+  font-variation-settings: "wght" 
+      311;
+  margin-bottom: 0.8rem;
+  color: rgb(205, 224, 226);
+  outline: none;
+  text-align: center;
+    }
+    .sidebar p{
+        margin-top: 2px;
+        text-align: center; 
+        font-family: 'georgia';
+    }
+    .sidebar h1:hover {
+            font-variation-settings: "wght" 582; 
+            letter-spacing: 1px;
+    }
+
+
+ footer {
+    width: 100%;
+    display: flex;
+    border-top: 1px solid #bababaef;
+    position: fixed; /* changed from absolute to fixed */
+    bottom: 0; /* position footer at the bottom */
+    align-items: center; /* align items to the center */
+    justify-content: center; 
+    display: flex;
+  }
+  
+    
+    @media only screen and (max-width:1040px){
+       
+        div.container{
+            display: flex;
+            flex-direction: column;
+        }
+        div.content{
+            width:auto;
+
+        }
+        
+        div.sidebar{
+            border-right: none;
+            width: 40%;
+            margin-top: -400px;
+            margin-bottom: 0px;
+            position: fixed; /* Add this line to make the sidebar fixed */
+            top: 0; /* Add this line to align the top of the sidebar with the top of the parent container */
+            left: 0; /* Add this line to align the sidebar to the left */
+            bottom: 0; 
+        }
+        footer{
+            width: 100%;
+            display: flex;
+            border-top: 1px solid #bababaef;
+            position: fixed;
+            justify-content: center;
+            }
+        
+            table {
+                font-size: 18px;
+                padding: 30px;
+              }
+              
+              th, td {
+                padding: 16px;
+              }
+        
+    
+    }
+    
+    @media only screen and (max-width:650px){
+        nav a{
+            letter-spacing: normal;
+            padding: 2.5% 2%;
+        }
+        table {
+            font-size: 16px;
+            padding: 20px;
+          }
+          
+          th, td {
+            padding: 12px;
+          }
+    }
