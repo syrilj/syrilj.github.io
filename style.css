@@ -64,16 +64,15 @@ body {
   
   nav {
     position: static;
-    top: 0;
-    margin: 1em 0;
-    width: 100%;
-    display: flex;
-    border-top: 2.5px solid #ebb128;
-    border-bottom: 1px solid #bababa;
-    justify-content: center;
-    text-transform: uppercase;
-    padding-bottom: 1em;
-    box-sizing: border-box;
+  top: 0;
+  margin: 1;
+  width: 100%;
+  display: flex;
+  border-top: 2.5px solid #ebb128;
+  border-bottom: 1px solid #bababa;
+  justify-content: center;
+  text-transform: uppercase;
+  box-sizing: border-box;
 }
   
   nav a {
