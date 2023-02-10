@@ -259,7 +259,7 @@ body {
     
     @media only screen and (max-width:650px){
 
-      nav {
+      .nav {
         border-top: 1px solid #ebb128;
         border-bottom: 1px solid #bababa;
         justify-content: center;
