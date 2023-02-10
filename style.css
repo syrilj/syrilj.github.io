@@ -73,6 +73,7 @@ body {
     justify-content: center;
     text-transform: uppercase;
     padding-bottom: 1em;
+    box-sizing: border-box;
 }
   
   nav a {
