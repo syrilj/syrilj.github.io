@@ -258,6 +258,12 @@ body {
     }
     
     @media only screen and (max-width:650px){
+
+      nav {
+        border-top: 1px solid #ebb128;
+        border-bottom: 1px solid #bababa;
+        justify-content: center;
+      }
       nav a{
           letter-spacing: normal;
           padding: 2.5% 2%;
