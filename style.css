@@ -65,14 +65,15 @@ body {
   nav {
     position: static;
     top: 0;
-    margin: 1;
+    margin: 1em 0;
     width: 100%;
     display: flex;
     border-top: 2.5px solid #ebb128;
     border-bottom: 1px solid #bababa;
     justify-content: center;
     text-transform: uppercase;
-  }
+    padding-bottom: 1em;
+}
   
   nav a {
     font-family: 'Montserrat', sans-serif;
@@ -166,14 +167,13 @@ body {
         
     div.sidebar {
       position: sticky;
-      width: 40%;
-    
-      padding: 0px;
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: column;
-      align-items: center;
-      margin-top: -10rem;
+    width: 40%;
+    padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1em;
     
   
         }
@@ -213,59 +213,61 @@ body {
       display: flex;
     }
     
-      
-      @media only screen and (max-width:1040px){
-         
-          div.container{
-              display: flex;
-              flex-direction: column;
-          }
-          div.content{
-              width:auto;
-  
-          }
-          
-          div.sidebar{
-              border-right: none;
-              width: 40%;
-              margin-top: -400px;
-              margin-bottom: 0px;
-              position: fixed; /* Add this line to make the sidebar fixed */
-              top: 0; /* Add this line to align the top of the sidebar with the top of the parent container */
-              left: 0; /* Add this line to align the sidebar to the left */
-              bottom: 0; 
-          }
-          footer{
-              width: 100%;
-              display: flex;
-              border-top: 1px solid #bababaef;
-              position: fixed;
-              justify-content: center;
-              }
-          
-              table {
-                  font-size: 18px;
-                  padding: 30px;
-                }
-                
-                th, td {
-                  padding: 16px;
-                }
-          
-      
+    @media only screen and (max-width:1040px){
+      .container{
+        display: flex;
+        flex-direction: column;
+      }
+      nav{
+        width: 100%;
+        display: inline-flex;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+      }
+      .content{
+        flex: 1;
+        margin-top: 60px;
+      }
+      sidebar{
+        width: 100%;
+        display: inline-flex;
+        max-height: calc(100vh - 60px);
+        overflow-y: auto;
+        margin-top: 60px;
+        z-index: 1;
+      }
+      footer{
+        width: 100%;
+        display: flex;
+        border-top: 1px solid #bababaef;
+        position: fixed;
+        justify-content: center;
+        bottom: 0;
+        margin-top: 60px;
       }
       
-      @media only screen and (max-width:650px){
-          nav a{
-              letter-spacing: normal;
-              padding: 2.5% 2%;
-          }
-          table {
-              font-size: 16px;
-              padding: 20px;
-            }
-            
-            th, td {
-              padding: 12px;
-            }
+      table {
+        font-size: 18px;
+        padding: 30px;
       }
+      
+      th, td {
+        padding: 16px;
+      }
+    }
+
+@media only screen and (max-width:650px){
+      nav a{
+          letter-spacing: normal;
+          padding: 2.5% 2%;
+      }
+      table {
+          font-size: 14px;
+          padding: 20px;
+      }
+      
+      th, td {
+          padding: 12px;
+      }
+  }
