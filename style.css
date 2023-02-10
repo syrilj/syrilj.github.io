@@ -63,16 +63,17 @@ body {
   }
   
   nav {
-    position: static;
-  top: 0;
-  margin: 1;
-  width: 100%;
-  display: flex;
-  border-top: 2.5px solid #ebb128;
-  border-bottom: 1px solid #bababa;
-  justify-content: center;
-  text-transform: uppercase;
-  box-sizing: border-box;
+    width: 100%;
+    display: inline-flex;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    border-top: 2.5px solid #ebb128;
+    border-bottom: 1px solid #bababa;
+    border-left: transparent;
+    border-right: transparent;
+    justify-content: center;
+    text-transform: uppercase;
 }
   
   nav a {
@@ -203,14 +204,13 @@ body {
   
   
    footer {
-      width: 100%;
-      display: flex;
-      border-top: 1px solid #bababaef;
-      position: fixed; /* changed from absolute to fixed */
-      bottom: 0; /* position footer at the bottom */
-      align-items: center; /* align items to the center */
-      justify-content: center; 
-      display: flex;
+    width: 100%;
+    display: flex;
+    border-top: 1px solid #bababaef;
+    position: fixed;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
     }
     
     @media only screen and (max-width:1040px){
@@ -258,15 +258,16 @@ body {
     }
     
     @media only screen and (max-width:650px){
+      
 
-      .nav {
-        border-top: 1px solid #ebb128;
-        border-bottom: 1px solid #bababa;
-        justify-content: center;
+      nav {
+        padding: 10px;
+        font-size: 12px;
+  
       }
-      nav a{
-          letter-spacing: normal;
-          padding: 2.5% 2%;
+      nav a {
+        letter-spacing: normal;
+        padding: 2.5% 2%;
       }
       table {
           font-size: 14px;
